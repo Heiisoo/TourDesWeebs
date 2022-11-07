@@ -1,0 +1,39 @@
+.card-container {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+
+    & mat-card-header {
+
+        & mat-card-title {
+            color: #7e9ed6;
+        }
+
+        & button {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+    }
+
+    & mat-card {
+        height: 370px;
+        width: 230px;
+        min-width: 230px;
+        margin: 10px 20px;
+
+        & img {
+            height: 200px;
+            background-size: cover;
+        }
+
+        & mat-card-actions button {
+            position: absolute;
+            display: inline-flex;
+            bottom: 20px;
+            right: 10px;
+        }
+    }
+
+}
