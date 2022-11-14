@@ -1,15 +1,26 @@
 <div class="card-container">
-    <mat-card *ngFor="let perso of personnages">
-        <mat-card-header>
-            <mat-card-title>{{perso.name}}</mat-card-title>
-            <mat-card-subtitle>{{perso.id}}</mat-card-subtitle>
-            <button mat-icon-button (click)="onAddFav(perso.name)">
-                <mat-icon>stare</mat-icon>
-            </button>
-        </mat-card-header>
-        <img mat-card-image [src]="perso.url" alt="">
-        <mat-card-actions>
-            <button mat-stroked-button (click)="onSelect(perso)">DETAILS</button>
-        </mat-card-actions>
-    </mat-card>
+  <mat-card *ngFor="let perso of personnages">
+    <mat-card-header>
+      <mat-card-title>{{perso.name}}</mat-card-title>
+      <mat-card-subtitle>{{perso.id}}</mat-card-subtitle>
+      <button mat-icon-button (click)="onAddFav(perso.name)">
+        <mat-icon>stare</mat-icon>
+      </button>
+    </mat-card-header>
+    <img mat-card-image [src]="perso.url" alt="">
+    <mat-card-actions>
+      <button mat-stroked-button (click)="onSelect(perso)">DETAILS</button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+
+<div class="quotes">
+  <div class="card">
+    <div class="box box1">
+      <p>The first step toward success is taken when you refuse to be a captive of the environment in which you first
+        find yourself. </p>
+      <h2>Mark Caine</h2>
+    </div>
+    <div class="bg"></div>
+  </div>
 </div>
